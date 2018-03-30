@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<button onclick="newQoute()"">Klikni me za novi qoute</button>
+	<div id="qouteDisplay">
+		
+	</div>
+	
+
+</body>
+<script>
+	var qoutes = [
+		"Man has always gone where he has been able to go. It&rsquo;s that simple. He will continue pushing back his frontier, no matter how far it may carry him from his homeland.",
+		"Bigfoot understood that there are two types of people in this world: those who do what they say they&rsquo;re going to do&mdash;and everyone else.",
+		"We excreted autumn and winter colors, but running invisibly through our veins, the very stuff that kept us alive, was the crimson of a mad artist&mdash;a red as brilliant as fresh paint.",
+		"Only an Earthling year ago,&rdquo; said Constant. &ldquo;It took us that long to realize that a purpose of human life, no matter who is controlling it, is to love whoever is around to be loved.",
+		"My asshole is doing as much to keep me alive as my brain.",
+		"But even if I am not asking questions, I am watching. While eating my soup at a crowded street stall, I can look around and see the patterns and pleasures of those around me.",
+		"The letters were bitter and funny and there were holes of unsaid where you could feel the demons breathing.",
+		"There was a cold, musty smell coming through the open doorway; it smelled like something very old and very slow."
+	]
+
+	function newQoute() {
+		var randomNumber = Math.floor(Math.random() * (qoutes.length));
+		document.getElementById("qouteDisplay").innerHTML = qoutes[randomNumber];
+	}
+
+</script>
+</html>
